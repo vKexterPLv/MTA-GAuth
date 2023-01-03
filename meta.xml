@@ -1,0 +1,20 @@
+<meta>
+	<info author="VSCode MTA:SA Lua" type="script" name="GAuth" />
+	<script src="utils.lua" type="shared" cache="false" />
+	<script src="c.lua" type="client" cache="false" />
+	<script src="s.lua" type="server" />
+
+	<file src="data/okno.png"/>
+	<file src="data/oknow.png"/>
+
+	<file src="data/tex_matrix.fx"/>
+	<file src="data/masked.fx"/>
+
+	<export function="dxDrawGAuth" type="client" />
+	<export function="startDownloadGAuth" type="server" />
+	<export function="validateGAuthCode" type="server" />
+	
+	<aclrequest>	
+		<right name="function.fetchRemote" access="true" />
+	</aclrequest>
+</meta>
